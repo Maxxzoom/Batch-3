@@ -1,0 +1,48 @@
+alt+shift+f = formatting
+alt+shift+down_arrow=copy of code/element
+alt+down_arrow/up_arrow=move the code
+cntl+`= to toggle the terminal
+cntl+b = to toggle the sidebar
+
+
+Javascripting is a scripting language
+
+Benifits of js
+  - js provided end to end development like frontend and backend
+  - Js is lightweight language
+
+
+What we can do using Js
+ - Manupulate the HTML pages
+ - Validation
+ - Data Handle
+ - Event Management
+ - Backend Data loading
+ - Server Management
+
+
+ Limitation
+ - Multithreading concept is not in js
+ - Newworking app- no support in js
+ - Reading/writing files - in js(security)
+
+
+ Show/hide element
+  - change the styling by providing different css properties
+  - we can provide text to element
+  - we can change the class/src/href for the element
+
+
+How to run js
+- Browser( we dont need anything specific to run js)
+- Developer tools(chrome ) - run js directly
+- Terminal( by using/installing node)- node in your local maching to run js file in the terminal
+
+
+Execution context and functional context
+
+
+
+
+
+

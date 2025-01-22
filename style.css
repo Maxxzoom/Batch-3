@@ -1,0 +1,117 @@
+/* Combinators */
+/* 4 types of combinators */
+
+/* 1. Descendant combinator (space) */
+/* Uses to match all elements that are descendant of another element */
+/* div p {
+  color: sandybrown;
+}
+p span {
+  color: powderblue;
+} */
+
+/* 2. Child combinator (>)*/
+/* Uses to match all the elements that are the children of another element */
+
+/* div > p {
+  background-color: yellow;
+} */
+
+/* 3. Next sibling combinator(+) */
+/* Used to select an element that is the directly after another specific element */
+
+/* div + p {
+    background-color: green;
+} */
+
+/* 4. Subsequent sibling combinator(~) */
+/* selects all the elements that are the siblings of another element */
+
+/* div ~ p{
+    background-color: royalblue;
+} */
+
+/* Psuedo class */
+
+/* SYNTAX */
+/* selector:psuedo-class{
+    property: value;
+} */
+
+/* used to style specific elements based on their state */
+/* e.g  =>
+  moves the mouse over the element 
+  visited links
+  when it get focused
+  valid
+  */
+
+a:link {
+  color: #ff0000;
+}
+/* div:hover{
+    background-color: chocolate;    
+} */
+a:focus {
+  background-color: yellow;
+}
+a:active {
+  background-color: green;
+}
+
+input:disabled {
+  border: 2px solid red;
+}
+
+input:enabled {
+  border: 2px solid green;
+}
+
+/* Psuedo elements */
+/* Used to style specific elements parts of an element */
+/* SYNTAX */
+/* selector::psuedo-element{
+    property: value;
+} */
+
+/* p::first-line {
+  font-size: 20px;
+  color: salmon;
+}
+p::first-letter {
+  font-size: 30px;
+  color: slateblue;
+} */
+/* p::before {
+  content: '"';
+}
+p::after {
+  content: '"';
+} */
+p::content {
+  color: red;
+}
+/* p::selection {
+    color: red;
+    background-color: yellow;
+} */
+ul {
+  list-style: upper-roman;
+}
+::marker {
+  font-size: 40px;
+  color: red;
+}
+input::placeholder {
+  color: teal;
+}
+
+/* Opacity */
+/* specifies the transparency of an element */
+/* range from 0.0 to 1.0 */
+div {
+  opacity: 0;
+}
+div:hover {
+  opacity: 1;
+}
