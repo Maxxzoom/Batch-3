@@ -166,7 +166,7 @@ let mobile = {
 // Homoegeneous (anything can be stored in an array)
 
 // 3 ways to create an array
-const arr1 = [1, 2, 3, 4];
+// const arr1 = [1, 2, 3, 4];
 
 // const arr2 = [];
 // arr2[0] = 1;
@@ -177,8 +177,8 @@ const arr1 = [1, 2, 3, 4];
 // const arr3 = new Array(1, 2, 3, 4);
 // this is not prefered bcoz its slow and it uses the constructer
 
-const arr4 = new Array(10);
-arr4[1] = "hello";
+// const arr4 = new Array(10);
+// arr4[1] = "hello";
 // create blank array of 10 elements
 
 // console.log(arr1, arr2, arr3);
@@ -200,7 +200,7 @@ arr4[1] = "hello";
 
 // pop() -remove last element
 // arr1.pop();
-console.log(arr1);
+// console.log(arr1);
 
 // Shift() - remove the element but first
 // arr1.shift();
@@ -216,12 +216,172 @@ console.log(arr1);
 // console.log(arr1);
 
 // slice - recreate any array from the existing array
-const arr5 = arr1.slice(1, 3);
-// arr1.slice(start index, end index(until that index));
-console.log(arr5);
+// const arr5 = arr1.slice(1, 3);
+// // arr1.slice(start index, end index(until that index));
+// console.log(arr5);
 
-// concat()- merge two arrays
-let arr6 = arr1.concat(arr5);
-console.log(arr6);
+// // concat()- merge two arrays
+// let arr6 = arr1.concat(arr5);
+// console.log(arr6);
+
+// Looping (for,for in,for of)
+// const arr1 = [5, 6, 7, 8, 9, 10, 1, 2, 3, 4];
+// for (let i = 0; i < arr1.length; i++) {
+//   console.log(arr1[i]);
+// }
+
+// Array - Iteration(map,filter,find,reduce,forEach,IndexOf, lastIndexOf)
+
+//forEach
+// Dont need index number
+// arr1.forEach((element) => {
+//   console.log(element, "forEach");
+// });
+
+// filter
+// if you want filter some of the elements/value from array
+// filter elements based on condition
+// filter return a new array with the required filtered elements
+
+// const filteredarr = arr1.filter((element) => {
+//   return element > 5;
+// });
+// console.log(arr1, "arr1");
+// console.log(filteredarr, "filter");
+
+// let students = [
+//   {
+//     id: 1,
+//     name: "swapnil",
+//     sport: "cricket",
+//   },
+//   {
+//     id: 2,
+//     name: "umesh",
+//     sport: "football",
+//   },
+//   {
+//     id: 3,
+//     name: "sachin",
+//     sport: "cricket",
+//   },
+// ];
+
+// let cricketplayers = students.filter((student) => {
+//   return student.sport == "cricket";
+// });
+
+// console.log(cricketplayers, "cricket");
+
+//map - by iterating each element you can modify the things & return new array
+
+// const maparr = arr1.map((element) => {
+//   return element ;
+// });
+// console.log(maparr, "maparr");
+
+// const arr1 = [5, 6, 7, 8, 9, 10, 5, 1, 2, 3, 9, 4];
+
+// find- it  will return whether element present or not at first index
+// const findarr = arr1.find((element) => {
+//   return (element = 5);
+// });
+// console.log(findarr, "find");
+
+//indexOf() - if you want to find element position/index in array
+
+// const indexarr = arr1.indexOf(9);
+// console.log(indexarr, "indexarr");
+
+// lastIndexOf() - one element occure multiple times in array - last element
+// const lastindex = arr1.lastIndexOf(9);
+// console.log(lastindex, "lastindex");
+
+// reduce()- if we want to add all elements in array together
+
+// let reduce = arr1.reduce((sum, element) => {
+//   return element + sum;
+// }, 0);
+// console.log(reduce, "reduce");
+
+// const arr2 = [4, 8, "maxxzoom", true];
+// const arr3 = [3, 7, "company", false];
+
+// const nestedarray = [arr2, arr3];
+// console.log(nestedarray, "nestedarray");
+
+// // e.g of reduce (join/flattened)
+// const flattenedarray = nestedarray.reduce((acc, currentValue) => {
+//   return acc.concat(currentValue);
+// }, []);
+
+// console.log(flattenedarray, "flattenedarray");
+
+// counting occurances
+const fruits = ["apple", "banana", "apple", "apple", "banana", "orange"];
+const count = fruits.reduce((acc, fruit) => {
+  acc[fruit] = (acc[fruit] || 0) + 1;
+  return acc;
+}, {});
+
+// acc[apple]=acc[apple]+1
+// acc[banana]=acc[banana]+1
+// // {apple:3 ,banana:2, orange:1}
+// console.log(count, "count");
+
+// // maximumm number
+// const numbers = [1, 11, 9, 7, 8];
+
+// const max = numbers.reduce((acc, curr) => {
+//   return curr > acc ? curr : acc;
+//   //       1  > 1  ?  1: 1  = 1
+//   //         4  > 1 ? 4 :1    = 4
+//   //          9 > 4  ?  9 : 4  = 9
+//   //          7 > 9 ?  7 : 9  = 9
+//   //          8 > 9 ? 8 : 9 = 9
+// }, numbers[0]);
+// console.log(max, "max");
+
+// 2 types of interation
+// for in  =  object(properties)
+// for(let key in object){
+// }
+
+//  for of  = array
+// for(let key of array){
+// }
+
+const arr1 = [5, 6, 7, 8, 9, 10, 5, 1, 2, 3, 9, 4];
+
+for (let value of arr1) {
+  console.log(value);
+}
+
+const obj = { id: 10, name: "anuj", city: "pune" };
+
+for (let prop in obj) {
+  console.log(prop);
+  console.log(obj[prop]);
+}
+
+// Pass by value,
+// let j = 5;
+// let k = j;
+// console.log(j, k);
+// k = 7;
+// console.log(j, k);
+
+// //  Pass by reference
+// let obj1 = { name: "anuj" };
+// let obj2 = obj1;
+// console.log(obj1, obj2);
+// obj2.name = "maxxzoom";
+// console.log(obj1, obj2);
+// let obj3 = obj2;
+// console.log(obj1, obj2, obj3);
+// obj3.name = "ug";
+// console.log(obj1, obj2, obj3);
 
 
+
+// this keyword & few imp point
