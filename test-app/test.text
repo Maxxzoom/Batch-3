@@ -52,10 +52,15 @@ myfun()
 this depends on how the functiion is called
 
 
-Arrow Function
-let myfunc=()=>{
+IIFE - (Immediately Involked function expression)
 
+function myfunc(){
+  console.log("Immediately called")
 }
+
+
+
+
 
 
 
