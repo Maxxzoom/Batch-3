@@ -42,7 +42,20 @@ How to run js
 Execution context and functional context
 
 
+2 way of function
 
+normal way - 
+function myfun(){
+
+}
+myfun()
+this depends on how the functiion is called
+
+
+Arrow Function
+let myfunc=()=>{
+
+}
 
 
 

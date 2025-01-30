@@ -67,12 +67,12 @@
 }
 .slider-track {
   display: flex;
-  animation: scroll 5s ease-in-out infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .slider img {
   width: 20%;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -80,10 +80,10 @@
 }
 @keyframes scroll {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 .bg-images{

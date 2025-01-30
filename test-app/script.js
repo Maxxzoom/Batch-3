@@ -95,8 +95,8 @@
 
 // myfun2();
 
-let a = 2;
-let b = 2;
+// let a = 2;
+// let b = 2;
 
 // let obj = {
 //   name: "swapnil",
@@ -104,43 +104,43 @@ let b = 2;
 // let obj2=obj
 
 // Function
-var arg = 35;
-function myfunc2(number1, num2) {
-  return number1 + num2;
-}
-// console.log(myfunc2(25, false, 58));
-// console.log(myfunc2(54, true, 37));
+// var arg = 35;
+// function myfunc2(number1, num2) {
+//   return number1 + num2;
+// }
+// // console.log(myfunc2(25, false, 58));
+// // console.log(myfunc2(54, true, 37));
 
-// Hoisting
-// In js the default behaviour of js where function/variable declared at the top
+// // Hoisting
+// // In js the default behaviour of js where function/variable declared at the top
 
-// object methods
-// An object is a collection of properties
+// // object methods
+// // An object is a collection of properties
 
-let mobilename = "redmi";
-let mobilemerory = "123GB";
+// let mobilename = "redmi";
+// let mobilemerory = "123GB";
 
-let mobile = {
-  model: "redmi",
-  memeory: "123GB",
-  camera: {
-    frontcamera: 12,
-    backcamera: 40,
-  },
+// let mobile = {
+//   model: "redmi",
+//   memeory: "123GB",
+//   camera: {
+//     frontcamera: 12,
+//     backcamera: 40,
+//   },
 
-  getmemoryandcamera: function () {
-    return (
-      "the memory is" +
-      this.memeory +
-      " " +
-      "and the frontcamera is" +
-      this.camera.frontcamera
-    );
-  },
-  getfrontandbackcamera: function () {
-    return this.camera.frontcamera + this.camera.backcamera;
-  },
-};
+//   getmemoryandcamera: function () {
+//     return (
+//       "the memory is" +
+//       this.memeory +
+//       " " +
+//       "and the frontcamera is" +
+//       this.camera.frontcamera
+//     );
+//   },
+//   getfrontandbackcamera: function () {
+//     return this.camera.frontcamera + this.camera.backcamera;
+//   },
+// };
 // let laptop = {
 //   model: "lenovo",
 //   memeory: "123GB",
@@ -436,3 +436,41 @@ let mobile = {
 // let m = true;
 
 // console.log(l === m);
+
+var j = 9;
+let d = 4;
+let e = 8;
+let f = 8;
+
+// function add(first, second) {
+//   return first + second;
+// }
+
+// let result = add(d, e);
+// console.log(result);
+
+// const myfun = () => {
+//   console.log("myfun");
+// };
+// myfun();
+
+// let a = 6;
+// let b = 8;
+// let c = 2;
+
+// const person = {
+//   name: "anuj",
+//   getname: (...allnumber) => {
+//     console.log(this.name, allnumber, "arrow");
+//   },
+//   // does not have its own this
+
+//   getfirstname: function (t, y, u) {
+//     console.log(this.name, t, y, u, "normal");
+//   },
+// };
+
+// person.getname(c, b, a);
+// person.getfirstname(a, b, c);
+
+
