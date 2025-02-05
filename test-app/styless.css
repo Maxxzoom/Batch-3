@@ -53,11 +53,18 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin-top: 2rem;
   background-color: #f0f0f0;
+}
+button{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: cornflowerblue;
 }
 .slider {
   width: 80%;
@@ -86,14 +93,14 @@
     transform: translateX(-100%);
   }
 }
-.bg-images{
+.bg-images {
   background-image: url("https://th.wallhaven.cc/lg/5g/5ge715.jpg");
   width: 100%;
   height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.bg-images p{
+.bg-images p {
   color: white;
 }
 /* 
@@ -176,3 +183,5 @@ width - width of viewport
     gap: 20px;
   }
 } */
+
+

@@ -34,7 +34,7 @@
         </ul>
       </nav>
     </header> -->
-    <div class="spinner-border" role="status">
+    <!-- <div class="spinner-border" role="status">
       <span class="visually-hidden">Loading...</span>
     </div>
     <div class="card text-bg-dark">
@@ -51,7 +51,7 @@
         </p>
         <p class="card-text"><small>Last updated 3 mins ago</small></p>
       </div>
-    </div>
+    </div> -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -108,11 +108,11 @@
       </div>
     </nav>
 
-    <div class="bg-images">
+    <!-- <div class="bg-images">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ad!
       </p>
-    </div>
+    </div> -->
     <!-- <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -156,7 +156,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div> -->
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -220,20 +220,20 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div> -->
 
     <!-- Button trigger modal -->
-    <button
+    <!-- <button
       type="button"
       class="btn btn-primary"
       data-bs-toggle="modal"
       data-bs-target="#exampleModal"
     >
       Open
-    </button>
+    </button> -->
 
     <!-- Modal -->
-    <div
+    <!-- <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -406,12 +406,82 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <footer></footer>
+    <!-- Timers -->
+    <!-- <p id="mytext">Timers</p> -->
+    <!-- <button onclick="myfun()">SetTime</button>
+    <button onclick="cleartime()">ClearTime</button> -->
+
+    <!-- <p id="display">0</p>
+    <button onclick="startInterval()">Start</button>
+    <button onclick="stopInterval()">Stop</button> -->
+
+    <!-- <div class="container">
+      <h1>Timout e.g</h1>
+      <div class="buttons">
+        <button onclick="startTimeout()">SetTimeout</button>
+        <button onclick="cancelTimeout()">cancelTimeout</button>
+      </div>
+      <p id="timeoutMsg"></p>
+    </div> -->
+
+    <!-- <div class="container">
+      <h1>Interval e.g</h1>
+      <div class="buttons">
+        <button onclick="startInterval()">SetInterval</button>
+        <button onclick="cancelInterval()">cancelInterval</button>
+      </div>
+      <p id="intervalMsg">Counter:0</p>
+    </div> -->
+<p id="mytext" name="mytext"></p>
+    <button onclick=document.getElementById("mytext").innerHTML="hello">Click me</button>
+    <button onclick=document.getElementById("mytext").style.backgroundColor="tomato">Click me</button>
+    <!-- <footer></footer> -->
   </body>
 
   <!-- <script src="script.js"></script> -->
+
+  <script>
+function myfun(){
+
+}
+
+
+    // Timeouts
+    // let timeoutId;
+
+    // function startTimeout() {
+    //   document.getElementById("timeoutMsg").textContent =
+    //     "Message will be displayed in 3 seconds";
+
+    //   timeoutId = setTimeout(() => {
+    //     document.getElementById("timeoutMsg").textContent = "Timeout executed";
+    //   }, 3000);
+    // }
+
+    // function cancelTimeout() {
+    //   clearTimeout(timeoutId);
+    //   document.getElementById("timeoutMsg").textContent = "Timeout cancelled";
+    // }
+
+    // Intervals
+
+    // let counter = 0;
+    // let intervalId;
+
+    // function startInterval() {
+    //   intervalId = setInterval(() => {
+    //     counter++;
+    //     document.getElementById("intervalMsg").textContent =
+    //       "Counter:" + counter;
+    //   }, 1000);
+    // }
+
+    // function cancelInterval() {
+    //   clearInterval(intervalId);
+    // }
+  </script>
   <script src="IIFEandCallback.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -9,15 +9,15 @@
 //   console.log("Immediately called");
 // })();
 
-// // Normal function
-// function myfunc2() {
-//   console.log("Immediately2 called");
-// }
+// Normal function
+function myfunc2() {
+  console.log("Immediately2 called");
+}
 
 // Callback function
 //  is a function that is passed as an argument to another function
 
-// function greet(name, callback) {
+// function greet(name,callback) {
 //   console.log("hello", name);
 //   callback();
 // }
@@ -28,10 +28,10 @@
 
 // greet("max", saybye);
 
-// // e.g
-// function sum(a, b, calldisplay) {
+// e.g
+// function sum(a, b, display) {
 //   let result = a + b;
-//   calldisplay(result);
+//   display(result);
 // }
 
 // function display(result) {
@@ -82,16 +82,65 @@
 // (...)
 
 //explading array
-const arr1 = [1, 2, 3, 4, 5];
-const arr2 = [...arr1, 6, 7, 8, 9, 10];
-console.log(arr2);
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [...arr1, 6, 7, 8, 9, 10];
+// console.log(arr2);
 
-// combining objects
+// // combining objects
 
-const person = { name: "anuj", age: 25 };
-const updatedPerson = { ...person, city: "Pune" };
-console.log(person, updatedPerson);
-
+// const person = { name: "anuj", age: 25 };
+// const updatedPerson = { ...person, city: "Pune" };
+// console.log(person, updatedPerson);
 
 // BOM - Browser Object Model
 // window - now can we do pagm using window object
+
+// Popup - alert, confirm, prompt
+// timers - setTimeout, setInterval,clearTimeout,clearInterval
+// location - location.href, location.reload, location.assign,location.path, location.port
+// history - history.back, history.forward, history.go
+// navigator - navigator.online, navigator.offline, navigator.geolocation, navigator.appName, navigator.vendor, navigator.coockieEnabled
+
+//   <!-- Asynchrouns -->
+//   <!-- setTimoOut - it will execute Js code after a specific time (once)
+//   <!-- setInterval - it will execute Js code after a specific time frame/loop
+
+let myvar;
+function myfun() {
+  myvar = setTimeout(() => {
+    document.getElementById("mytext").innerHTML = "after some time";
+  }, 3000);
+}
+function cleartime() {
+  clearTimeout(myvar);
+}
+// setInterval
+
+let Interval;
+let count = 0;
+function startInterval() {
+  Interval = setInterval(() => {
+    count++;
+    document.getElementById("display").textContent = count;
+  }, 500);
+}
+function stopInterval() {
+  Interval = clearInterval(Interval);
+}
+
+// (function () {
+//   if (navigator.onLine) {
+
+//     alert("Welcome back");
+//     console.log("useronlie");
+//   }
+// })();
+
+
+// DOM - Document Object Model
+
+// by using js- change element, change style, change attributes, add/remove element from pages etc
+
+// Methods- document.getElementById, document.getElementsByClassName, document.getElementsByTagName
+// Properties -  document.getElementById("mytext").innerHTML/style/attributes/src/href/class
+// Events - onclick, onchange, onmouseover, onmouseout, onsubmit, onreset etc
