@@ -105,28 +105,28 @@ function myfunc2() {
 //   <!-- setTimoOut - it will execute Js code after a specific time (once)
 //   <!-- setInterval - it will execute Js code after a specific time frame/loop
 
-let myvar;
-function myfun() {
-  myvar = setTimeout(() => {
-    document.getElementById("mytext").innerHTML = "after some time";
-  }, 3000);
-}
-function cleartime() {
-  clearTimeout(myvar);
-}
-// setInterval
+// let myvar;
+// function myfun() {
+//   myvar = setTimeout(() => {
+//     document.getElementById("mytext").innerHTML = "after some time";
+//   }, 3000);
+// }
+// function cleartime() {
+//   clearTimeout(myvar);
+// }
+// // setInterval
 
-let Interval;
-let count = 0;
-function startInterval() {
-  Interval = setInterval(() => {
-    count++;
-    document.getElementById("display").textContent = count;
-  }, 500);
-}
-function stopInterval() {
-  Interval = clearInterval(Interval);
-}
+// let Interval;
+// let count = 0;
+// function startInterval() {
+//   Interval = setInterval(() => {
+//     count++;
+//     document.getElementById("display").textContent = count;
+//   }, 500);
+// }
+// function stopInterval() {
+//   Interval = clearInterval(Interval);
+// }
 
 // (function () {
 //   if (navigator.onLine) {
@@ -144,3 +144,39 @@ function stopInterval() {
 // Methods- document.getElementById, document.getElementsByClassName, document.getElementsByTagName
 // Properties -  document.getElementById("mytext").innerHTML/style/attributes/src/href/class
 // Events - onclick, onchange, onmouseover, onmouseout, onsubmit, onreset etc
+
+
+
+    // Timeouts
+    // let timeoutId;
+
+    // function startTimeout() {
+    //   document.getElementById("timeoutMsg").textContent =
+    //     "Message will be displayed in 3 seconds";
+
+    //   timeoutId = setTimeout(() => {
+    //     document.getElementById("timeoutMsg").textContent = "Timeout executed";
+    //   }, 3000);
+    // }
+
+    // function cancelTimeout() {
+    //   clearTimeout(timeoutId);
+    //   document.getElementById("timeoutMsg").textContent = "Timeout cancelled";
+    // }
+
+    // Intervals
+
+    // let counter = 0;
+    // let intervalId;
+
+    // function startInterval() {
+    //   intervalId = setInterval(() => {
+    //     counter++;
+    //     document.getElementById("intervalMsg").textContent =
+    //       "Counter:" + counter;
+    //   }, 1000);
+    // }
+
+    // function cancelInterval() {
+    //   clearInterval(intervalId);
+    // }

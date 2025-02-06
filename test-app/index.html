@@ -434,55 +434,24 @@
       </div>
       <p id="intervalMsg">Counter:0</p>
     </div> -->
-<p id="mytext" name="mytext"></p>
+    <!-- <p id="mytext" name="mytext"></p>
     <button onclick=document.getElementById("mytext").innerHTML="hello">Click me</button>
-    <button onclick=document.getElementById("mytext").style.backgroundColor="tomato">Click me</button>
+    <button onclick=document.getElementById("mytext").style.backgroundColor="tomato">Click me</button> -->
     <!-- <footer></footer> -->
+
+    <p id="mytext">Hey</p>
+    <button onclick="myfun()">Click</button>
   </body>
 
   <!-- <script src="script.js"></script> -->
 
+
   <script>
-function myfun(){
-
-}
-
-
-    // Timeouts
-    // let timeoutId;
-
-    // function startTimeout() {
-    //   document.getElementById("timeoutMsg").textContent =
-    //     "Message will be displayed in 3 seconds";
-
-    //   timeoutId = setTimeout(() => {
-    //     document.getElementById("timeoutMsg").textContent = "Timeout executed";
-    //   }, 3000);
-    // }
-
-    // function cancelTimeout() {
-    //   clearTimeout(timeoutId);
-    //   document.getElementById("timeoutMsg").textContent = "Timeout cancelled";
-    // }
-
-    // Intervals
-
-    // let counter = 0;
-    // let intervalId;
-
-    // function startInterval() {
-    //   intervalId = setInterval(() => {
-    //     counter++;
-    //     document.getElementById("intervalMsg").textContent =
-    //       "Counter:" + counter;
-    //   }, 1000);
-    // }
-
-    // function cancelInterval() {
-    //   clearInterval(intervalId);
-    // }
+    function myfun() {
+      document.getElementById("mytext").innerHTML = "hello";
+    }
   </script>
-  <script src="IIFEandCallback.js"></script>
+  <!-- <script src="IIFEandCallback.js"></script> -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

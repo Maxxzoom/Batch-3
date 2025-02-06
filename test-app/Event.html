@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        border: 1px solid black;
+        height: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Events - Action performed on browser window -->
+
+    <!-- hover event, mouseup, mousedown, click, scroll, focus, onload, onchange, onsubmit, onreset, toggle -->
+
+    <!-- <p id="mytext">Hey</p>
+    <h2 id="heading2">Hello</h2>
+    <button onclick="myfun()">Click</button> -->
+
+    <!-- <h1 id="header">Heading 1</h1>
+    <p class="description">description</p>
+    <p class="description">description</p>
+    <div id="container"></div>
+    <button id="secondaddelementbutton">Button</button> -->
+
+    <!-- selecting the element by Id, class & Tag -->
+
+    <!-- <div id="container" onmouseover="mouseover()" class="container">Div</div> -->
+
+    <div id="container"></div>
+  </body>
+
+  <script>
+    const container = document.getElementById("container");
+
+    // const list = document.createElement("ul");
+    for (let i = 0; i < 100; i++) {
+      const listItem = document.createElement("p");
+      listItem.innerText = `Item ${i}`;
+      container.appendChild(listItem);
+    }
+    container.appendChild(list);
+
+    // function myfun() {
+    //   document.getElementById("mytext").innerHTML = "hello";
+    //   document.getElementById("mytext").style.backgroundColor = "tomato";
+    //   document.getElementById("mytext").style.padding = "1rem";
+    // }
+    // function myload() {
+    //   document.getElementById("heading2").style.backgroundColor = "tomato";
+    //   document.getElementById("heading2").style.padding = "2rem";
+    // }
+
+    // changing the text/style of the element
+    // const header = (document.getElementById("header").innerHTML = "Hello");
+    // // header.style.color = "red";
+
+    // const description = document.getElementsByClassName(".description");
+    // // looping through the elements by class name
+    // Array.from(description).forEach((desc) => console.log(desc));
+
+    // const button = document.getElementsByTagName("button");
+
+    // // query selector
+    // const container = document.querySelector("#container");
+    // const allPara = document.querySelectorAll("p");
+    // console.log(container, allPara);
+
+    function mouseover() {
+      console.log("mouseover");
+    }
+    // creating an element
+    // const container = document.getElementById("container");
+
+    const newElement = document.createElement("p");
+    newElement.innerText = "This is a new element";
+    newElement.classList.add("para");
+    newElement.style.backgroundColor = "yellow";
+
+    document.body.appendChild(newElement);
+
+    console.log(header);
+    console.log(button.length);
+  </script>
+</html>
