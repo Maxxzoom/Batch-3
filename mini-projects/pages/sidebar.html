@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .hamburger {
+        font-size: 20px;
+        cursor: pointer;
+        padding: 15px;
+        top: 10px;
+        left: 10px;
+        background: #333;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .sidebar {
+        height: 100%;
+        width: 0;
+        overflow-x: hidden;
+        left: 0;
+        top: 0px;
+        position: fixed;
+        margin-top: 60px;
+      }
+
+      .sidebar a{
+        padding: 15px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        
+    }
+    
+    .sidebar a:hover{
+        background-color: #575757;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Hamburger Menu -->
+      <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">News</a>
+      </div>
+    </header>
+  </body>
+
+  <script>
+    function toggleSidebar() {
+      let sidebar = document.getElementById("sidebar");
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+      } else {
+        sidebar.style.width = "250px";
+      }
+    }
+  </script>
+</html>
