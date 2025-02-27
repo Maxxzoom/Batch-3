@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mini_container">
+      <h1>Counter</h1>
+      <div id="counter">0</div>
+      <button onclick="changeCount(1)">Increase</button>
+      <button onclick="changeCount(-1)">Decrease</button>
+    </div>
+    <script>
+      let count = 0;
+      function changeCount(num) {
+        count += num;
+        document.getElementById("counter").innerHTML = count;
+      }
+    </script>
+  </body>
+</html>
