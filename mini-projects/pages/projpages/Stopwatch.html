@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Stopwatch</h1>
+    <p id="timer">0</p>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+
+    <script>
+      let time = 0,
+        interval;
+
+      function startTimer() {
+        interval = setInterval(
+          () => (document.getElementById("timer").innerText = ++time),
+          1000
+        );
+      }
+      function stopTimer() {
+        clearInterval(interval);
+      }
+
+      function resetTimer() {
+        clearInterval(interval);
+        time = 0;
+        document.getElementById("timer").innerText = time;
+      }
+    </script>
+  </body>
+</html>

@@ -59,6 +59,7 @@ ul li a:hover {
     color: var(--background-color);
     border-radius: 5px;
     padding: 20px 0px;
+    z-index: 2;
   }
   .nav-links.active {
     display: flex;

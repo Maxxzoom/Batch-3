@@ -25,8 +25,10 @@ body {
   width: 100%;
 }
 
-.container {
+.container,
+.project-container {
   width: 90%; /* Adjust width as needed */
+  min-height: 100vh;
   margin: 0 auto; /* Centers the content */
   background-color: rgb(241, 239, 239);
   padding: 20px;
@@ -167,14 +169,14 @@ width: 100%;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .carousel {
   width: 80vw;
   height: 400px;
   overflow: hidden;
   border-radius: var(--radius);
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .carousel-inner {
   display: flex;
@@ -203,10 +205,10 @@ width: 100%;
   border-radius: 10px;
 }
 .prev {
-  left: 10px;
+  left: 12%;
 }
 .next {
-  right: 10px;
+  right: 12%;
 }
 
 .dots {
@@ -237,7 +239,7 @@ width: 100%;
 
 .project-box {
   width: 200px;
-  background-color: #ac9393;
+  background-color: var(--background-color);
   height: 150px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;

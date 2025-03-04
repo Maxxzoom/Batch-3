@@ -26,11 +26,44 @@
 
     <!-- Main Content -->
     <div class="project-container">
-      <div class="project-box" onclick="openProject('./projpages/counter.html')">
+      <div
+        class="project-box"
+        onclick="openProject('./projpages/counter.html')"
+      >
         Counter
       </div>
       <div class="project-box" onclick="openProject('./projpages/todo.html')">
         To-Do List
+      </div>
+      <div
+        class="project-box"
+        onclick="openProject('./projpages/digital.html')"
+      >
+        Digital Clock
+      </div>
+      <div
+        class="project-box"
+        onclick="openProject('./projpages/BMIcalculator.html')"
+      >
+        BMI Calculator
+      </div>
+      <div
+        class="project-box"
+        onclick="openProject('./projpages/TempConverter.html')"
+      >
+       Temperatur Converter
+      </div>
+      <div
+        class="project-box"
+        onclick="openProject('./projpages/Stopwatch.html')"
+      >
+       Stopwatch
+      </div>
+      <div
+        class="project-box"
+        onclick="openProject('./projpages/Quiz.html')"
+      >
+       Quiz
       </div>
     </div>
 
@@ -72,6 +105,9 @@
     function openProject(page) {
       window.open(page);
     }
+  </script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
   <script src="../script/script.js"></script>
 </html>
