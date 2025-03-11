@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../../style/common.css" />
+  </head>
+  <body>
+    <div class="weather_container">
+      <div class="weather_form">
+        <input type="text" id="city" placeholder="Enter city" class="input" />
+        <button class="btn" onclick="getWeather()">Weather</button>
+      </div>
+
+      <div class="weather_data">
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="description"></p>
+      </div>
+    </div>
+
+    <script>
+      async function getWeather() {
+        const city = document.getElementById("city").value;
+        const res = await fetch(
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=dbac668ade309bce09597615e9492129`
+        );
+        const data = await res.json();
+        console.log(data);
+
+        document.getElementById(
+          "temperature"
+        ).innerText = `Temperature: ${Math.floor(data.main.temp - 273.15)}`;
+        document.getElementById(
+          "humidity"
+        ).innerText = `Humidity: ${data.main.humidity}`;
+        document.getElementById(
+          "description"
+        ).innerText = `Weather: ${data.weather[0].description}`;
+      }
+    </script>
+  </body>
+</html>

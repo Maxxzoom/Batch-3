@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Text to Speech Converter</h2>
+    <textarea name="" id="ttsinput" placeholder="Type text here..."></textarea>
+    <button onclick="speakText()">Speak</button>
+
+    <script>
+      function speakText() {
+        const text = document.getElementById("ttsinput").value;
+
+        if (text.trim() === "") {
+          alert("Please enter some text to speak");
+          return;
+        }
+        const speech = new SpeechSynthesisUtterance(text);
+        window.speechSynthesis.speak(speech);
+
+        console.log(text);
+      }
+    </script>
+  </body>
+</html>
