@@ -56,8 +56,23 @@ body {
 .footer-section ul li {
   margin-bottom: var(--fivepixels);
 }
+.links ul{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 .social-icons a{
  color: white;
+ font-size: 20px;
 }
 
 .footer-section ul li a:hover {

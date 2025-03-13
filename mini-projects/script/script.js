@@ -44,15 +44,50 @@ togglebtn.addEventListener("click", () => {
 // });
 
 // autocarousel
-let currentIndex = 0;
+// let currentIndex = 0;
 
-function autoSlideCarousel() {
-  console.log("timer called");
-  const carouselInner = document.querySelector(".carousel-inner");
-  const totalSlides = document.querySelectorAll(".carousel-item");
-  currentIndex = (currentIndex + 1) % totalSlides.length;
-  carouselInner.style.transform = `translateX(-${currentIndex * 100}%) `;
-}
+// function autoSlideCarousel() {
+//   // console.log("timer called");
+//   const carouselInner = document.querySelector(".carousel-inner");
+//   const totalSlides = document.querySelectorAll(".carousel-item");
+//   currentIndex = (currentIndex + 1) % totalSlides.length;
+//   carouselInner.style.transform = `translateX(-${currentIndex * 100}%) `;
+// }
 
 // Auto slide every 2 second
-setInterval(autoSlideCarousel, 3000);
+// setInterval(autoSlideCarousel, 3000);
+
+// Contact form
+
+document.addEventListener("DOMContentLoaded", () => {
+  emailjs.init("SSQqKIEdG4CwfC3PQ");
+
+  document
+    .getElementById("contactform")
+    .addEventListener("submit", function (e) {
+      
+      e.preventDefault();
+      console.log(e);
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        message: message,
+      };
+
+      emailjs.send("service_ux3neyg", "template_nyqpdwd", templateParams).then(
+        function (response) {
+          document.getElementById("statusmessage").innerText =
+            "Message sent Successfully";
+        },
+        function (error) {
+          document.getElementById("statusmessage").innerText =
+            "Failed to send message, Please try again...!";
+        }
+      );
+    });
+});
