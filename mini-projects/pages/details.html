@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="product-details" id="productDetails"></div>
+    <script>
+      const products = [
+        {
+          id: 1,
+          name: "SmartPhone",
+          Price: 299,
+          image: "",
+        },
+        {
+          id: 2,
+          name: "Laptop",
+          Price: 699,
+          image: "",
+        },
+        {
+          id: 3,
+          name: "Headphone",
+          Price: 99,
+          image: "",
+        },
+        {
+          id: 4,
+          name: "SmartWatch",
+          Price: 199,
+          image: "",
+        },
+      ];
+
+      const productDetails = document.getElementById("productDetails");
+      const selectedId = localStorage.getItem("selectedProduct");
+      const product = products.find((p) => p.id == selectedId);
+
+      if (product) {
+        productDetails.innerHTML = `
+    <img src="${product.image}"  alt="${product.name}"/>
+    <h2>${product.name}  </h2>
+    <p> Price: $${product.Price}</p>
+    <p> Description: 
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium vero similique consectetur, exercitationem delectus et ut, vel ullam soluta earum quas. Et delectus quos fugit quam inventore, pariatur odit reiciendis magnam voluptatem omnis velit sint voluptate enim similique corrupti asperiores excepturi laborum, optio nostrum impedit numquam! Quaerat, nihil eius. Ullam quasi pariatur repellendus dolorem voluptatem vitae sit ratione, consequatur, veniam ducimus placeat, laboriosam earum ut. Natus voluptates impedit reiciendis eos nulla, optio iure neque, similique atque, odio totam assumenda? Possimus asperiores voluptatem dicta quisquam cum neque rerum eveniet perferendis, fuga id aliquam aperiam! Dolorem porro odit consequuntur suscipit tempore?
+        
+        </p>
+    
+    `;
+      }
+    </script>
+  </body>
+</html>

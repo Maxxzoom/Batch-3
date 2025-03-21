@@ -14,8 +14,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Header Section -->
@@ -29,11 +34,17 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html?">Contact</a></li>
           <li><a href="projects.html">Projects</a></li>
+          <div class="cart-icon" onclick="toggleCartDropdown()">
+            🛒 <span id="cartCount" class="cart-count">0</span>
+          </div>
+          <div id="cartDropdown" class="cart-dropdown">
+            <h3>Cart Items</h3>
+            <ul id="cartItems"></ul>
+            <p>
+              <strong>Total : $<span id="cartTotal">0</span> </strong>
+            </p>
+          </div>
         </ul>
-
-        <div class="cart-icon" onclick="toggleCartDropdown()">
-          🛒 <span id="cartCount" class="cart-count">0</span>
-        </div>
       </nav>
     </header>
 
@@ -55,7 +66,7 @@
         </div>
       </div> -->
 
-        <div class="carousel-container">
+        <!-- <div class="carousel-container">
           <div class="carousel">
             <div class="carousel-inner">
               <img
@@ -77,10 +88,10 @@
             <button class="prev arrow_btn">&#10094</button>
             <button class="next arrow_btn">&#10095</button>
           </div>
-        </div>
+        </div> -->
       </div>
 
-      <div class="dropdown">
+      <!-- <div class="dropdown">
         <button class="dropdown_btn">Dropdown</button>
         <div class="dropdown_data">
           <a href="index.html">Home</a>
@@ -88,12 +99,9 @@
           <a href="contact.html">Contact</a>
           <a href="news.html">News</a>
         </div>
-      </div>
-
-
+      </div> -->
 
       <div id="productContainer" class="product-container"></div>
-
 
       <h2>Images</h2>
       <div class="gallary">
@@ -161,7 +169,6 @@
           </p>
         </div>
       </div>
-     
     </div>
 
     <!-- Footer -->
@@ -186,9 +193,15 @@
             <a href="#" target="_blank"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-            <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/?lang=en" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://in.linkedin.com/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </div>
         </div>
       </div>
